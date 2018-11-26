@@ -15,4 +15,4 @@ app
   .use(router.allowedMethods())
 
 app.listen(3000)
-console.log('the server is listening at port 80')
+console.log('the server is listening at port 3000')
