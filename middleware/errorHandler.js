@@ -4,7 +4,7 @@ module.exports = function errorHanler () {
       await next()
     } catch (err) {
       ctx.status = err.statusCode || err.status || 500
-      ctx.body = 'error happen'
+      ctx.body = {"msg": 'something goes wrong'}
       ctx.app.emit('error', err, ctx)
     }
   }
