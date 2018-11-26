@@ -1,3 +1,4 @@
+const APIError = require('../lib/apiError')
 const crypto = require('crypto')
 
 function auth (ctx) {
@@ -15,10 +16,10 @@ function auth (ctx) {
     if (resultCode === signature) {
       ctx.body = echostr
     } else {
-      ctx.body = 'mismatch'
+      throw new APIError(4001, 'authorize not pass')
     }
   } else {
-    ctx.body = 'bad request'
+    throw new APIError(4000, 'params error')
   }
 }
 

@@ -3,8 +3,11 @@ module.exports = function errorHanler () {
     try {
       await next()
     } catch (err) {
-      ctx.status = err.statusCode || err.status || 500
-      ctx.body = {"msg": 'something goes wrong'}
+      ctx.status = 400
+      ctx.body = {
+        code: err.code || 'internal:unknown_error',
+        message: err.message || ''
+    }
       ctx.app.emit('error', err, ctx)
     }
   }
