@@ -1,0 +1,16 @@
+{
+  "event": {
+    "subscribe": "没想到你终于来啦。",
+    "click": "别点人家啦"
+  },
+  "text": {
+    "悄悄话": "爱你💗",
+    "晚安": "安"
+  },
+  "image": null,
+  "voice": null,
+  "video": null,
+  "location": null,
+  "link": null,
+  "default": "已读不回:)"
+}

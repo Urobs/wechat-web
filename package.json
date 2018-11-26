@@ -8,7 +8,10 @@
   },
   "dependencies": {
     "koa": "2.6.2",
-    "koa-router": "7.4.0"
+    "koa-router": "7.4.0",
+    "koa-bodyparser": "4.2.1",
+    "xml2js": "0.4.19",
+    "koa-xml-body": "2.1.0"
   },
   "author": "",
   "license": "ISC"
