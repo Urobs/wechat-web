@@ -1,4 +1,4 @@
-const APIError = require('../lib/apiError')
+const APIError = require('../lib/apierror')
 const crypto = require('crypto')
 
 function auth (ctx) {

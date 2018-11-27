@@ -1,6 +1,6 @@
 const auth = require('./auth')
 const config = require('../config')
-const getAccessToken = require('./getAccessToken')
+const getAccessToken = require('./get_accessToken')
 const wechat = function (config) {
   this.config = config
   this.token = config.token

@@ -1,4 +1,4 @@
-const msgHandler = require('./handleMsg')
+const msgHandler = require('./handle_msg')
 const Router = require('koa-router')
 const test = require('./test')
 const wechat = require('../wechat/wechat')

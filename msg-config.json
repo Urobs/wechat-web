@@ -12,5 +12,5 @@
   "video": null,
   "location": null,
   "link": null,
-  "default": "已读不回:)"
+  "default": ["已读不回:)", "好啦我知道啦~", "你说的是真的吗？", "XD", "嘻嘻", "嗯嗯嗯！"]
 }

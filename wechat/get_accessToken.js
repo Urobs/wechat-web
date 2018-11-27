@@ -1,7 +1,7 @@
 const accessToken = require('./accessToken')
-const APIError = require('../lib/apiError')
+const APIError = require('../lib/apierror')
 const fs = require('fs')
-const requestGet = require('../lib/requestGet')
+const requestGet = require('../lib/request_get')
 const util = require('util')
 
 function getAccessToken() {
