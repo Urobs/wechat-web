@@ -1,6 +1,6 @@
 const msgProcess = require('../lib/message_process')
 
-module.exports = function (ctx) {
+module.exports = async function (ctx) {
     const xmlMsg = ctx.request.body
     res = xmlMsg.xml
     const msgType = res.MsgType.toLowerCase()
@@ -12,7 +12,7 @@ module.exports = function (ctx) {
         }
       }
       else {
-        ctx.body = msgProcess.text(ctx, res) 
+        ctx.body = await msgProcess.text(ctx, res) 
       }
     } else {
       msgProcess.replyDefault(ctx, res)
