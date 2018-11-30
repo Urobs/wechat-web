@@ -11,7 +11,9 @@
     "koa-router": "7.4.0",
     "koa-bodyparser": "4.2.1",
     "koa-xml-body": "2.1.0",
-    "request": "2.88.0"
+    "request": "2.88.0",
+    "jsonwebtoken": "8.4.0",
+    "koa-jwt": "3.5.1"
   },
   "author": "",
   "license": "ISC"
