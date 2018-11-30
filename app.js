@@ -13,7 +13,7 @@ app.use(errorHandler())
 app.use(loggerAsync())
 app.use(
   jwtKoa({ secret: config.jwt.secret })
-  .unless({ path: [/\//, /\/auth/] })
+  .unless({ path: ['/', /\/auth/] })
 )
 app.use(xmlParser({ 
   xmlOptions: { explicitArray: false },
