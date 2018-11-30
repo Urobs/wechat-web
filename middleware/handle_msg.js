@@ -11,8 +11,10 @@ module.exports = async function (ctx) {
           msgProcess[msgType][event](ctx, res)
         }
       }
-      else {
+      else if(msgType === 'text'){
         ctx.body = await msgProcess.text(ctx, res) 
+      } else {
+        msgProcess[msgType](ctx, res)
       }
     } else {
       msgProcess.replyDefault(ctx, res)
